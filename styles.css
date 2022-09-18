@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+
+}
+
+main {
+    width: 90vw;
+    height: 85vh;
+    max-width: 350px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+header {
+    width: 90%;
+    height: 400px;
+    margin-top: 20px;
+    background-image: url('./images/image-equilibrium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header:hover > .bg{
+    opacity: 1;
+    
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 247,0.4);
+    opacity: 0;
+}
+
+
+
+
+section {
+    width: 90%;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+h4 {
+    margin-bottom: 20px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+
+}
+
+.info {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.info-eth,
+.info-time {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    margin-left: 8px;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+
+.info-created {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.img-profile {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.creation {
+    margin-top: 20px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+
+}
+
+.author {
+    margin-top: 20px;
+    margin-left: 4px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.author:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+/*
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)*/
